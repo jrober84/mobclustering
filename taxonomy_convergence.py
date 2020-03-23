@@ -185,7 +185,7 @@ def main():
     'species']
 
 
-    input_data = pd.read_csv('/Users/jrobertson/PycharmProjects/__mobcluster/__2019-12-results/Taxonomy_NCBI_Plasmids.txt', header=0,sep="\t")
+    input_data = pd.read_csv('Taxonomy_NCBI_Plasmids.txt', header=0,sep="\t")
 
     replicon_types = process_results(taxon_ranks,get_types(taxon_ranks, input_data, 'rep_type(s)'))
     replicon_acs = process_results(taxon_ranks,get_types(taxon_ranks, input_data, 'rep_type_accession(s)'))
